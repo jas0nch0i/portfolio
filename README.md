@@ -140,6 +140,34 @@ An end-to-end segmentation case study using the UCI Online Retail II dataset. RF
 
 ---
 
+### [5. Streamlit Apps on Databricks (Currently Exploring)](https://github.com/jas0nch0i/streamlit-databricks-apps)
+**Local Streamlit mockups designed for deployment as Databricks Apps — analyst tooling, queue triage, and platform cost monitoring**
+
+A working set of Streamlit apps built as local prototypes for eventual deployment as Databricks Apps. Each app explores a different analyst-facing or operations-facing surface, with a companion cost-monitoring reference toolkit so the spend story is explicit before deployment.
+
+**What this project demonstrates**
+- Streamlit UI patterns — multi-tab layouts, cached data loaders, session-state handoff, form-gated expensive operations
+- Weighted scoring engines for queue triage (SLA, resubmittal, complexity, staleness, project size)
+- Operational UX — worklists, team-ops dashboards, configurable rules
+- Analyst utilities — file ingestion, schema inspection, auto-detected joins, pivot + chart on arbitrary data
+- Cost discipline — system-table queries, tagging strategy, budget policies, and a recommended monitoring dashboard for any Streamlit app on Databricks
+
+**Tech stack:** Streamlit · pandas · Python · Databricks SQL Warehouse (target) · Unity Catalog (target) · Databricks Apps (target deployment)
+
+**Apps included**
+- **Plan Review Triage** — permit / plan-review queue triage with weighted scoring, team ops view, and editable rules
+- **Analyst Toolkit** — CSV/Excel explorer + multi-sheet auto-join utility
+- **Databricks Cost Monitoring** — reference guide for monitoring Streamlit / Databricks App spend (system tables, queries, dashboard layout)
+
+> Status: local mockups against synthetic data. Databricks Apps deployment is the next step.
+
+**Visuals**
+- [Plan Review — worklist](https://github.com/jas0nch0i/streamlit-databricks-apps/blob/main/plan-review-triage/images/01-worklist.png)
+- [Plan Review — team operations](https://github.com/jas0nch0i/streamlit-databricks-apps/blob/main/plan-review-triage/images/02-team-ops.png)
+- [Plan Review — rules and intake](https://github.com/jas0nch0i/streamlit-databricks-apps/blob/main/plan-review-triage/images/03-rules-intake.png)
+
+---
+
 ## What This Portfolio Shows
 
 ✅ Ability to translate business needs into analytics solutions
@@ -160,6 +188,7 @@ I am currently building portfolio work centered on:
 - AI-assisted BI development workflows
 - Reporting automation and decision-support tools
 - Customer analytics and segmentation
+- Streamlit apps on Databricks for analyst tooling and operational workflows
 
 ---
 
